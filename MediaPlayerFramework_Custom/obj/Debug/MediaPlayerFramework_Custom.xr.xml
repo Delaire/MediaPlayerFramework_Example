@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="MainVm" />
+    <RootPropertyPathName Name="HideElementCommand" />
+    <RootPropertyPathName Name="ShowElementCommand" />
+    <RootPropertyPathName Name="MediaQuality" />
+    <RootPropertyPathName Name="IsResolutionIndicatorVisible" />
+    <RootPropertyPathName Name="IsSignalStrengthVisible" />
+    <RootPropertyPathName Name="SignalStrength" />
+    <RootPropertyPathName Name="IsDurationButtonVisible" />
+    <RootPropertyPathName Name="ViewModel" />
+    <RootPropertyPathName Name="IsTimeRemainingButtonVisible" />
+    <RootPropertyPathName Name="IsTimeElapsedButtonVisible" />
+    <RootPropertyPathName Name="IsTimelineVisible" />
+    <RootPropertyPathName Name="IsSkipNextButtonVisible" />
+    <RootPropertyPathName Name="IsFastForwardButtonVisible" />
+    <RootPropertyPathName Name="IsSkipAheadButtonVisible" />
+    <RootPropertyPathName Name="IsPlayPauseButtonVisible" />
+    <RootPropertyPathName Name="IsSkipBackButtonVisible" />
+    <RootPropertyPathName Name="IsRewindButtonVisible" />
+    <RootPropertyPathName Name="IsSkipPreviousButtonVisible" />
+    <RootPropertyPathName Name="IsMoreButtonVisible" />
+    <RootPropertyPathName Name="IsMuteButtonVisible" />
+    <RootPropertyPathName Name="IsFullScreenButtonVisible" />
+    <RootPropertyPathName Name="IsInfoButtonVisible" />
+    <RootPropertyPathName Name="IsGoLiveButtonVisible" />
+    <RootPropertyPathName Name="IsZoomButtonVisible" />
+    <RootPropertyPathName Name="IsAudioSelectionButtonVisible" />
+    <RootPropertyPathName Name="IsCaptionSelectionButtonVisible" />
+    <RootPropertyPathName Name="IsSlowMotionButtonVisible" />
+    <RootPropertyPathName Name="IsStopButtonVisible" />
+    <RootPropertyPathName Name="IsReplayButtonVisible" />
+    <RootPropertyPathName Name="IsCustomControlVisible" />
+    <RootPropertyPathName Name="CustomElementCommand" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="MediaPlayerFramework_Custom.ViewModel.ViewModelLocator" />
+    <RootType FullName="MediaPlayerFramework_Custom.Converters.BooleanToVisibilityConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Background" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="BottomAppBar" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.MediaPlayer">
+      <RootProperty Name="Source" />
+      <RootProperty Name="InteractiveDeactivationMode" />
+      <RootProperty Name="AutoHideBehavior" />
+      <RootProperty Name="ControlPanelTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="PrimaryCommands" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Command" />
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Label" />
+      <RootProperty Name="IsCompact" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="MediaPlayerFramework_Custom.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Microsoft.PlayerFramework.BoolToVisibilityConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.Timeline">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="ViewModel" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.SignalStrength">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.ResolutionIndicator">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MediaQuality" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.MediaControls">
+      <RootMethod Name="GetBehavior" />
+      <RootMethod Name="SetBehavior" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.TotalDurationBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.TimeRemainingBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.TimeElapsedBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.SkipNextButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.FastForwardButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.SkipAheadButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.PlayPauseButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.SkipBackButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.RewindButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.SkipPreviousButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.MoreButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.MuteButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.FullScreenButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.InfoButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.GoLiveButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.ZoomButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.AudioSelectionButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.CaptionSelectionButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.SlowMotionButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.StopButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Microsoft.PlayerFramework.ReplayButtonBehavior">
+      <RootProperty Name="ViewModel" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Command" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="Duration" />
+      <RootProperty Name="To" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="StrokeDashOffset" />
+      <RootProperty Name="StrokeEndLineCap" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
+      <RootMethod Name="GetAccessibilityView" />
+      <RootMethod Name="SetAccessibilityView" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>
