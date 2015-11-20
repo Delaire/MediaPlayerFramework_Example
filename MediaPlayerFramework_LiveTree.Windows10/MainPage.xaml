@@ -5,11 +5,28 @@
       xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:core="using:Microsoft.Xaml.Interactions.Core"
       x:Class="MediaPlayerFramework_LiveTree.Windows10.MainPage"
+        xmlns:playerFramework="using:Microsoft.PlayerFramework"
       mc:Ignorable="d"
       DataContext="{Binding Main, Source={StaticResource Locator}}">
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/PlayerTheme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    
     <Grid>
-        <Grid.Background>
+
+        <playerFramework:MediaPlayer x:Name="player" 
+                                     Width="400" 
+                                     Height="400" 
+                                     VerticalAlignment="Center" 
+                                     HorizontalAlignment="Center" 
+                                     Source="http://smf.blob.core.windows.net/samples/videos/wildlife.mp4" />
+        
+        <!--<Grid.Background>
             <LinearGradientBrush EndPoint="0.906,1.164"
                                  StartPoint="0.244,-0.159">
                 <GradientStop Color="#FFA20000"
@@ -85,6 +102,9 @@
                        Foreground="White"
                        Margin="23.82,20,23.18,0"
                        Text="{Binding Clock}" />
-        </StackPanel>
+        </StackPanel>-->
+        
+        
+        
     </Grid>
 </Page>
