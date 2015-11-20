@@ -7,8 +7,8 @@
     <RootPropertyPathName Name="IsDurationButtonVisible" />
     <RootPropertyPathName Name="ViewModel" />
     <RootPropertyPathName Name="IsTimeRemainingButtonVisible" />
-    <RootPropertyPathName Name="IsTimelineVisible" />
     <RootPropertyPathName Name="IsThumbnailVisible" />
+    <RootPropertyPathName Name="IsTimelineVisible" />
     <RootPropertyPathName Name="ThumbnailImageSource" />
     <RootPropertyPathName Name="IsSkipNextButtonVisible" />
     <RootPropertyPathName Name="IsFastForwardButtonVisible" />
@@ -52,10 +52,10 @@
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
-      <RootMethod Name="GetColumnSpan" />
-      <RootMethod Name="SetColumnSpan" />
       <RootMethod Name="GetRowSpan" />
       <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Microsoft.PlayerFramework.MediaPlayer">
       <RootProperty Name="Source" />
@@ -69,9 +69,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
@@ -101,12 +101,12 @@
       <RootProperty Name="DataContext" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Child" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="BorderBrush" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="IsHitTestVisible" />
     </RootType>
@@ -116,9 +116,9 @@
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -126,8 +126,8 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Style" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Microsoft.PlayerFramework.MediaControls">
@@ -136,12 +136,12 @@
     </RootType>
     <RootType FullName="Microsoft.PlayerFramework.Timeline">
       <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Padding" />
       <RootProperty Name="SliderTemplate" />
+      <RootProperty Name="ThumbnailVisibility" />
       <RootProperty Name="ViewModel" />
       <RootProperty Name="Visibility" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="ThumbnailVisibility" />
       <RootProperty Name="ThumbnailContent" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -156,9 +156,9 @@
       <RootProperty Name="ViewModel" />
     </RootType>
     <RootType FullName="Microsoft.PlayerFramework.ThumbnailView">
-      <RootProperty Name="ThumbnailImageSource" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ThumbnailImageSource" />
     </RootType>
     <RootType FullName="Microsoft.PlayerFramework.TimeElapsedButtonBehavior">
       <RootProperty Name="ViewModel" />
@@ -192,8 +192,8 @@
       <RootMethod Name="SetTargetProperty" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
-      <RootProperty Name="To" />
       <RootProperty Name="Duration" />
+      <RootProperty Name="To" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
       <RootProperty Name="KeyFrames" />
@@ -203,13 +203,13 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
-      <RootProperty Name="IsHitTestVisible" />
-      <RootProperty Name="Stroke" />
-      <RootProperty Name="StrokeEndLineCap" />
-      <RootProperty Name="StrokeDashArray" />
-      <RootProperty Name="Opacity" />
-      <RootProperty Name="StrokeDashOffset" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="StrokeDashOffset" />
+      <RootProperty Name="StrokeEndLineCap" />
       <RootProperty Name="Fill" />
       <RootProperty Name="StrokeThickness" />
     </RootType>
@@ -224,26 +224,26 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
-      <RootProperty Name="Visibility" />
       <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
-      <RootProperty Name="Stroke" />
-      <RootProperty Name="Fill" />
-      <RootProperty Name="StrokeThickness" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Path">
-      <RootProperty Name="Fill" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Data" />
+      <RootProperty Name="Fill" />
     </RootType>
   </Roots.RootTypes>
 </Roots>

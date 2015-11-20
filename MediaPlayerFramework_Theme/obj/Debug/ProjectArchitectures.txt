@@ -1,1 +1,1 @@
-C:\Users\damie\Desktop\Tutorial Media player examples\MediaPlayerFramework_Theme\MediaPlayerFramework_Theme.csproj;neutral
+C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Theme\MediaPlayerFramework_Theme.csproj;neutral

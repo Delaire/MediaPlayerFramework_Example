@@ -133,7 +133,7 @@
                                 Height="30"
                                 VerticalAlignment="Top"
                                 Background="DarkRed">
-                            <TextBlock Text="Title of the video could go here" />
+                            <TextBlock Text="{Binding Path=TitleOfTheVideo}" />
                         </Border>
 
                         <Border x:Name="CustomElement"
@@ -323,7 +323,7 @@
                                                   Width="70"
                                                   Height="70"
                                                   Margin="50,0,50,0"
-                                                  Style="{StaticResource CircleLessTransportBarButtonStyle}"  
+                                                  Style="{StaticResource CircleLessTransportBarButtonStyle}"
                                                   Visibility="{Binding IsPlayPauseButtonVisible,
                                                                        RelativeSource={RelativeSource TemplatedParent},
                                                                        Converter={StaticResource VisibleIfConverter}}">

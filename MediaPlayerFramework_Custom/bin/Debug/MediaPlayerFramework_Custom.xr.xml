@@ -36,6 +36,7 @@
     <RootPropertyPathName Name="IsReplayButtonVisible" />
     <RootPropertyPathName Name="IsCustomControlVisible" />
     <RootPropertyPathName Name="CustomElementCommand" />
+    <RootPropertyPathName Name="TitleOfTheVideo" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">

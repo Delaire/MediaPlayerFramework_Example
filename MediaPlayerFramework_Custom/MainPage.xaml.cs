@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using MediaPlayerFramework_Custom.ViewModel;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -22,6 +23,18 @@ namespace MediaPlayerFramework_Custom
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public new MainViewModel ViewModel
+        {
+            get
+            {
+                return (MainViewModel)base.DataContext;
+            }
+            set
+            {
+                ViewModel = value;
+            }
+        }
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -36,13 +49,12 @@ namespace MediaPlayerFramework_Custom
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // TODO: Prepare page for display here.
+            player.MediaEnded += Player_MediaEnded;
+        }
 
-            // TODO: If your application contains multiple pages, ensure that you are
-            // handling the hardware Back button by registering for the
-            // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
-            // If you are using the NavigationHelper provided by some templates,
-            // this event is handled for you.
+        private void Player_MediaEnded(object sender, Microsoft.PlayerFramework.MediaPlayerActionEventArgs e)
+        {
+            ViewModel.IsCustomControlVisible = true;
         }
     }
 }

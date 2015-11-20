@@ -9,13 +9,11 @@
       mc:Ignorable="d">
 
     <Page.Resources>
-
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/Entertainment.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-
     </Page.Resources>
 
     <Grid x:Name="LayoutRoot">

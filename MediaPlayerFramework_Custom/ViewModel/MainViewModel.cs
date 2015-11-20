@@ -25,6 +25,13 @@ namespace MediaPlayerFramework_Custom.ViewModel
             set { Set(() => IsCustomControlVisible, ref _isCustomControlVisible, value); }
         }
 
+        private string _titleOfTheVideo = "Title of the video could go here";
+        public string TitleOfTheVideo
+        {
+            get { return _titleOfTheVideo; }
+            set { Set(() => TitleOfTheVideo, ref _titleOfTheVideo, value); }
+        }
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
