@@ -12,12 +12,16 @@ namespace MediaPlayerFramework_LiveTree.Windows10
         {
             InitializeComponent();
 
-            SystemNavigationManager.GetForCurrentView().BackRequested += SystemNavigationManagerBackRequested;
-
             Loaded += (s, e) =>
             {
-                Vm.RunClock();
+                //When player is ending show the Control
+                player.MediaEnded += Player_MediaEnded;
             };
+        }
+
+        private void Player_MediaEnded(object sender, Microsoft.PlayerFramework.MediaPlayerActionEventArgs e)
+        {
+            Vm.IsRateMyVideoVisible = true;
         }
 
         private void SystemNavigationManagerBackRequested(object sender, BackRequestedEventArgs e)
@@ -31,7 +35,6 @@ namespace MediaPlayerFramework_LiveTree.Windows10
 
         protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
         {
-            Vm.StopClock();
             base.OnNavigatingFrom(e);
         }
     }

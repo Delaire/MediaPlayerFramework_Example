@@ -5,13 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:ignore="http://www.galasoft.ch/ignore"
-             mc:Ignorable="d ignore"
+			 xmlns:converters="using:MediaPlayerFramework_LiveTree.Windows10.Converters"
+			 mc:Ignorable="d ignore"
              RequestedTheme="Light">
     
     <Application.Resources>
         <!--Global View Model Locator-->
         <vm:ViewModelLocator x:Key="Locator"
                              d:IsDataSource="True" />
+
+        <converters:BooleanToVisibilityConverter x:Key="BTVConverter" />
     </Application.Resources>
     
 </Application>

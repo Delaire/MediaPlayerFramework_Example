@@ -118,35 +118,6 @@ namespace MediaPlayerFramework_LiveTree.Windows10.ViewModel
             Initialize();
         }
 
-        public void RunClock()
-        {
-            _runClock = true;
-
-            Task.Run(async () =>
-            {
-                while (_runClock)
-                {
-                    try
-                    {
-                        DispatcherHelper.CheckBeginInvokeOnUI(() =>
-                        {
-                            Clock = DateTime.Now.ToString("HH:mm:ss");
-                        });
-
-                        await Task.Delay(1000);
-                    }
-                    catch (Exception ex)
-                    {
-                    }
-                }
-            });
-        }
-
-        public void StopClock()
-        {
-            _runClock = false;
-        }
-
         private async Task Initialize()
         {
             try
@@ -161,5 +132,61 @@ namespace MediaPlayerFramework_LiveTree.Windows10.ViewModel
                 WelcomeTitle = ex.Message;
             }
         }
+
+        private bool _isRateMyVideoVisible = false;
+        public bool IsRateMyVideoVisible
+        {
+            get
+            {
+                return _isRateMyVideoVisible;
+            }
+            set
+            {
+                Set(ref _isRateMyVideoVisible, value);
+            }
+        }
+
+        public RelayCommand UpVoteCommand
+        {
+            get
+            {
+                return new RelayCommand(async () =>
+                {
+                    var dialog = ServiceLocator.Current.GetInstance<IDialogService>();
+                    await dialog.ShowMessage("Custom Player", "Up Voted.");
+
+                    //TODO: add more logic here
+                });
+            }
+        }
+
+        public RelayCommand NeutralVoteCommand
+        {
+            get
+            {
+                return new RelayCommand(async () =>
+                {
+                    var dialog = ServiceLocator.Current.GetInstance<IDialogService>();
+                    await dialog.ShowMessage("Custom Player", "Neutral Voted.");
+
+                    //TODO: add more logic here
+                });
+            }
+        }
+
+        public RelayCommand DownVoteCommand
+        {
+            get
+            {
+                return new RelayCommand(async () =>
+                {
+                    var dialog = ServiceLocator.Current.GetInstance<IDialogService>();
+                    await dialog.ShowMessage("Custom Player", "Down Voted.");
+
+                    //TODO: add more logic here
+                });
+            }
+        }
+
     }
 }
