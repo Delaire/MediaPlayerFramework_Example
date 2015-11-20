@@ -1013,6 +1013,7 @@ namespace MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo
             case 60:   //  MediaPlayerFramework_Custom.MainPage
                 userType = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_60_MainPage;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -2783,188 +2784,198 @@ namespace MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             return that.PlayerState;
         }
-        private object get_180_BoolToVisibilityConverter_Inverse(object instance)
+        private object get_180_MainPage_ViewModel(object instance)
+        {
+            var that = (global::MediaPlayerFramework_Custom.MainPage)instance;
+            return that.ViewModel;
+        }
+        private void set_180_MainPage_ViewModel(object instance, object Value)
+        {
+            var that = (global::MediaPlayerFramework_Custom.MainPage)instance;
+            that.ViewModel = (global::MediaPlayerFramework_Custom.ViewModel.MainViewModel)Value;
+        }
+        private object get_181_BoolToVisibilityConverter_Inverse(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.BoolToVisibilityConverter)instance;
             return that.Inverse;
         }
-        private void set_180_BoolToVisibilityConverter_Inverse(object instance, object Value)
+        private void set_181_BoolToVisibilityConverter_Inverse(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.BoolToVisibilityConverter)instance;
             that.Inverse = (global::System.Boolean)Value;
         }
-        private object get_181_Timeline_ViewModel(object instance)
+        private object get_182_Timeline_ViewModel(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             return that.ViewModel;
         }
-        private void set_181_Timeline_ViewModel(object instance, object Value)
+        private void set_182_Timeline_ViewModel(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             that.ViewModel = (global::Microsoft.PlayerFramework.IInteractiveViewModel)Value;
         }
-        private object get_182_Timeline_SliderTemplate(object instance)
+        private object get_183_Timeline_SliderTemplate(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             return that.SliderTemplate;
         }
-        private void set_182_Timeline_SliderTemplate(object instance, object Value)
+        private void set_183_Timeline_SliderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             that.SliderTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
         }
-        private object get_183_Timeline_ThumbnailContent(object instance)
+        private object get_184_Timeline_ThumbnailContent(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             return that.ThumbnailContent;
         }
-        private void set_183_Timeline_ThumbnailContent(object instance, object Value)
+        private void set_184_Timeline_ThumbnailContent(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             that.ThumbnailContent = (global::Windows.UI.Xaml.UIElement)Value;
         }
-        private object get_184_Timeline_ThumbnailVisibility(object instance)
+        private object get_185_Timeline_ThumbnailVisibility(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             return that.ThumbnailVisibility;
         }
-        private void set_184_Timeline_ThumbnailVisibility(object instance, object Value)
+        private void set_185_Timeline_ThumbnailVisibility(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.Timeline)instance;
             that.ThumbnailVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_185_ResolutionIndicator_MediaQuality(object instance)
+        private object get_186_ResolutionIndicator_MediaQuality(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.ResolutionIndicator)instance;
             return that.MediaQuality;
         }
-        private void set_185_ResolutionIndicator_MediaQuality(object instance, object Value)
+        private void set_186_ResolutionIndicator_MediaQuality(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.ResolutionIndicator)instance;
             that.MediaQuality = (global::Microsoft.PlayerFramework.MediaQuality)Value;
         }
-        private object get_186_MediaControls_Behavior(object instance)
+        private object get_187_MediaControls_Behavior(object instance)
         {
             return global::Microsoft.PlayerFramework.MediaControls.GetBehavior((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_186_MediaControls_Behavior(object instance, object Value)
+        private void set_187_MediaControls_Behavior(object instance, object Value)
         {
             global::Microsoft.PlayerFramework.MediaControls.SetBehavior((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.PlayerFramework.IMediaControlBehavior)Value);
         }
-        private object get_187_MediaControls_IsToolTipEnabled(object instance)
+        private object get_188_MediaControls_IsToolTipEnabled(object instance)
         {
             return global::Microsoft.PlayerFramework.MediaControls.GetIsToolTipEnabled((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_187_MediaControls_IsToolTipEnabled(object instance, object Value)
+        private void set_188_MediaControls_IsToolTipEnabled(object instance, object Value)
         {
             global::Microsoft.PlayerFramework.MediaControls.SetIsToolTipEnabled((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Boolean)Value);
         }
-        private object get_188_MediaControlBehaviorBase_ViewModel(object instance)
+        private object get_189_MediaControlBehaviorBase_ViewModel(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehaviorBase)instance;
             return that.ViewModel;
         }
-        private void set_188_MediaControlBehaviorBase_ViewModel(object instance, object Value)
+        private void set_189_MediaControlBehaviorBase_ViewModel(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehaviorBase)instance;
             that.ViewModel = (global::Microsoft.PlayerFramework.IInteractiveViewModel)Value;
         }
-        private object get_189_MediaControlBehavior_Content(object instance)
+        private object get_190_MediaControlBehavior_Content(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             return that.Content;
         }
-        private void set_189_MediaControlBehavior_Content(object instance, object Value)
+        private void set_190_MediaControlBehavior_Content(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_190_MediaControlBehavior_Label(object instance)
+        private object get_191_MediaControlBehavior_Label(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             return that.Label;
         }
-        private void set_190_MediaControlBehavior_Label(object instance, object Value)
+        private void set_191_MediaControlBehavior_Label(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             that.Label = (global::System.String)Value;
         }
-        private object get_191_MediaControlBehavior_ContentConverter(object instance)
+        private object get_192_MediaControlBehavior_ContentConverter(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             return that.ContentConverter;
         }
-        private void set_191_MediaControlBehavior_ContentConverter(object instance, object Value)
+        private void set_192_MediaControlBehavior_ContentConverter(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             that.ContentConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
         }
-        private object get_192_MediaControlBehavior_LabelConverter(object instance)
+        private object get_193_MediaControlBehavior_LabelConverter(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             return that.LabelConverter;
         }
-        private void set_192_MediaControlBehavior_LabelConverter(object instance, object Value)
+        private void set_193_MediaControlBehavior_LabelConverter(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehavior)instance;
             that.LabelConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
         }
-        private object get_193_MediaControlBehaviorBase_Command(object instance)
+        private object get_194_MediaControlBehaviorBase_Command(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehaviorBase)instance;
             return that.Command;
         }
-        private void set_193_MediaControlBehaviorBase_Command(object instance, object Value)
+        private void set_194_MediaControlBehaviorBase_Command(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaControlBehaviorBase)instance;
             that.Command = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_194_MediaToggleControlBehavior_IsSet(object instance)
+        private object get_195_MediaToggleControlBehavior_IsSet(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             return that.IsSet;
         }
-        private void set_194_MediaToggleControlBehavior_IsSet(object instance, object Value)
+        private void set_195_MediaToggleControlBehavior_IsSet(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             that.IsSet = (global::System.Boolean)Value;
         }
-        private object get_195_MediaToggleControlBehavior_SetContent(object instance)
+        private object get_196_MediaToggleControlBehavior_SetContent(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             return that.SetContent;
         }
-        private void set_195_MediaToggleControlBehavior_SetContent(object instance, object Value)
+        private void set_196_MediaToggleControlBehavior_SetContent(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             that.SetContent = (global::System.Object)Value;
         }
-        private object get_196_MediaToggleControlBehavior_UnsetContent(object instance)
+        private object get_197_MediaToggleControlBehavior_UnsetContent(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             return that.UnsetContent;
         }
-        private void set_196_MediaToggleControlBehavior_UnsetContent(object instance, object Value)
+        private void set_197_MediaToggleControlBehavior_UnsetContent(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             that.UnsetContent = (global::System.Object)Value;
         }
-        private object get_197_MediaToggleControlBehavior_SetLabel(object instance)
+        private object get_198_MediaToggleControlBehavior_SetLabel(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             return that.SetLabel;
         }
-        private void set_197_MediaToggleControlBehavior_SetLabel(object instance, object Value)
+        private void set_198_MediaToggleControlBehavior_SetLabel(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             that.SetLabel = (global::System.String)Value;
         }
-        private object get_198_MediaToggleControlBehavior_UnsetLabel(object instance)
+        private object get_199_MediaToggleControlBehavior_UnsetLabel(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             return that.UnsetLabel;
         }
-        private void set_198_MediaToggleControlBehavior_UnsetLabel(object instance, object Value)
+        private void set_199_MediaToggleControlBehavior_UnsetLabel(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaToggleControlBehavior)instance;
             that.UnsetLabel = (global::System.String)Value;
@@ -4191,137 +4202,143 @@ namespace MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo
                 xamlMember.Getter = get_179_MediaPlayer_PlayerState;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "MediaPlayerFramework_Custom.MainPage.ViewModel":
+                userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MediaPlayerFramework_Custom.MainPage");
+                xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "ViewModel", "MediaPlayerFramework_Custom.ViewModel.MainViewModel");
+                xamlMember.Getter = get_180_MainPage_ViewModel;
+                xamlMember.Setter = set_180_MainPage_ViewModel;
+                break;
             case "Microsoft.PlayerFramework.BoolToVisibilityConverter.Inverse":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.BoolToVisibilityConverter");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "Inverse", "Boolean");
-                xamlMember.Getter = get_180_BoolToVisibilityConverter_Inverse;
-                xamlMember.Setter = set_180_BoolToVisibilityConverter_Inverse;
+                xamlMember.Getter = get_181_BoolToVisibilityConverter_Inverse;
+                xamlMember.Setter = set_181_BoolToVisibilityConverter_Inverse;
                 break;
             case "Microsoft.PlayerFramework.Timeline.ViewModel":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Timeline");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "ViewModel", "Microsoft.PlayerFramework.IInteractiveViewModel");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_181_Timeline_ViewModel;
-                xamlMember.Setter = set_181_Timeline_ViewModel;
+                xamlMember.Getter = get_182_Timeline_ViewModel;
+                xamlMember.Setter = set_182_Timeline_ViewModel;
                 break;
             case "Microsoft.PlayerFramework.Timeline.SliderTemplate":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Timeline");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "SliderTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_182_Timeline_SliderTemplate;
-                xamlMember.Setter = set_182_Timeline_SliderTemplate;
+                xamlMember.Getter = get_183_Timeline_SliderTemplate;
+                xamlMember.Setter = set_183_Timeline_SliderTemplate;
                 break;
             case "Microsoft.PlayerFramework.Timeline.ThumbnailContent":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Timeline");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "ThumbnailContent", "Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_183_Timeline_ThumbnailContent;
-                xamlMember.Setter = set_183_Timeline_ThumbnailContent;
+                xamlMember.Getter = get_184_Timeline_ThumbnailContent;
+                xamlMember.Setter = set_184_Timeline_ThumbnailContent;
                 break;
             case "Microsoft.PlayerFramework.Timeline.ThumbnailVisibility":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Timeline");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "ThumbnailVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_184_Timeline_ThumbnailVisibility;
-                xamlMember.Setter = set_184_Timeline_ThumbnailVisibility;
+                xamlMember.Getter = get_185_Timeline_ThumbnailVisibility;
+                xamlMember.Setter = set_185_Timeline_ThumbnailVisibility;
                 break;
             case "Microsoft.PlayerFramework.ResolutionIndicator.MediaQuality":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.ResolutionIndicator");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "MediaQuality", "Microsoft.PlayerFramework.MediaQuality");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_185_ResolutionIndicator_MediaQuality;
-                xamlMember.Setter = set_185_ResolutionIndicator_MediaQuality;
+                xamlMember.Getter = get_186_ResolutionIndicator_MediaQuality;
+                xamlMember.Setter = set_186_ResolutionIndicator_MediaQuality;
                 break;
             case "Microsoft.PlayerFramework.MediaControls.Behavior":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControls");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "Behavior", "Microsoft.PlayerFramework.IMediaControlBehavior");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_186_MediaControls_Behavior;
-                xamlMember.Setter = set_186_MediaControls_Behavior;
+                xamlMember.Getter = get_187_MediaControls_Behavior;
+                xamlMember.Setter = set_187_MediaControls_Behavior;
                 break;
             case "Microsoft.PlayerFramework.MediaControls.IsToolTipEnabled":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControls");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "IsToolTipEnabled", "Boolean");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_187_MediaControls_IsToolTipEnabled;
-                xamlMember.Setter = set_187_MediaControls_IsToolTipEnabled;
+                xamlMember.Getter = get_188_MediaControls_IsToolTipEnabled;
+                xamlMember.Setter = set_188_MediaControls_IsToolTipEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaControlBehaviorBase.ViewModel":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControlBehaviorBase");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "ViewModel", "Microsoft.PlayerFramework.IInteractiveViewModel");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_188_MediaControlBehaviorBase_ViewModel;
-                xamlMember.Setter = set_188_MediaControlBehaviorBase_ViewModel;
+                xamlMember.Getter = get_189_MediaControlBehaviorBase_ViewModel;
+                xamlMember.Setter = set_189_MediaControlBehaviorBase_ViewModel;
                 break;
             case "Microsoft.PlayerFramework.MediaControlBehavior.Content":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_189_MediaControlBehavior_Content;
-                xamlMember.Setter = set_189_MediaControlBehavior_Content;
+                xamlMember.Getter = get_190_MediaControlBehavior_Content;
+                xamlMember.Setter = set_190_MediaControlBehavior_Content;
                 break;
             case "Microsoft.PlayerFramework.MediaControlBehavior.Label":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "Label", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_190_MediaControlBehavior_Label;
-                xamlMember.Setter = set_190_MediaControlBehavior_Label;
+                xamlMember.Getter = get_191_MediaControlBehavior_Label;
+                xamlMember.Setter = set_191_MediaControlBehavior_Label;
                 break;
             case "Microsoft.PlayerFramework.MediaControlBehavior.ContentConverter":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "ContentConverter", "Windows.UI.Xaml.Data.IValueConverter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_191_MediaControlBehavior_ContentConverter;
-                xamlMember.Setter = set_191_MediaControlBehavior_ContentConverter;
+                xamlMember.Getter = get_192_MediaControlBehavior_ContentConverter;
+                xamlMember.Setter = set_192_MediaControlBehavior_ContentConverter;
                 break;
             case "Microsoft.PlayerFramework.MediaControlBehavior.LabelConverter":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "LabelConverter", "Windows.UI.Xaml.Data.IValueConverter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_192_MediaControlBehavior_LabelConverter;
-                xamlMember.Setter = set_192_MediaControlBehavior_LabelConverter;
+                xamlMember.Getter = get_193_MediaControlBehavior_LabelConverter;
+                xamlMember.Setter = set_193_MediaControlBehavior_LabelConverter;
                 break;
             case "Microsoft.PlayerFramework.MediaControlBehaviorBase.Command":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaControlBehaviorBase");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_193_MediaControlBehaviorBase_Command;
-                xamlMember.Setter = set_193_MediaControlBehaviorBase_Command;
+                xamlMember.Getter = get_194_MediaControlBehaviorBase_Command;
+                xamlMember.Setter = set_194_MediaControlBehaviorBase_Command;
                 break;
             case "Microsoft.PlayerFramework.MediaToggleControlBehavior.IsSet":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaToggleControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "IsSet", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_194_MediaToggleControlBehavior_IsSet;
-                xamlMember.Setter = set_194_MediaToggleControlBehavior_IsSet;
+                xamlMember.Getter = get_195_MediaToggleControlBehavior_IsSet;
+                xamlMember.Setter = set_195_MediaToggleControlBehavior_IsSet;
                 break;
             case "Microsoft.PlayerFramework.MediaToggleControlBehavior.SetContent":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaToggleControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "SetContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_195_MediaToggleControlBehavior_SetContent;
-                xamlMember.Setter = set_195_MediaToggleControlBehavior_SetContent;
+                xamlMember.Getter = get_196_MediaToggleControlBehavior_SetContent;
+                xamlMember.Setter = set_196_MediaToggleControlBehavior_SetContent;
                 break;
             case "Microsoft.PlayerFramework.MediaToggleControlBehavior.UnsetContent":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaToggleControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "UnsetContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_196_MediaToggleControlBehavior_UnsetContent;
-                xamlMember.Setter = set_196_MediaToggleControlBehavior_UnsetContent;
+                xamlMember.Getter = get_197_MediaToggleControlBehavior_UnsetContent;
+                xamlMember.Setter = set_197_MediaToggleControlBehavior_UnsetContent;
                 break;
             case "Microsoft.PlayerFramework.MediaToggleControlBehavior.SetLabel":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaToggleControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "SetLabel", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_197_MediaToggleControlBehavior_SetLabel;
-                xamlMember.Setter = set_197_MediaToggleControlBehavior_SetLabel;
+                xamlMember.Getter = get_198_MediaToggleControlBehavior_SetLabel;
+                xamlMember.Setter = set_198_MediaToggleControlBehavior_SetLabel;
                 break;
             case "Microsoft.PlayerFramework.MediaToggleControlBehavior.UnsetLabel":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaToggleControlBehavior");
                 xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "UnsetLabel", "String");
-                xamlMember.Getter = get_198_MediaToggleControlBehavior_UnsetLabel;
-                xamlMember.Setter = set_198_MediaToggleControlBehavior_UnsetLabel;
+                xamlMember.Getter = get_199_MediaToggleControlBehavior_UnsetLabel;
+                xamlMember.Setter = set_199_MediaToggleControlBehavior_UnsetLabel;
                 break;
             }
             return xamlMember;

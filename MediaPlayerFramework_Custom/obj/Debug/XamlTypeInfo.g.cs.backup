@@ -489,7 +489,7 @@ namespace MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo
             case 0:   //  MediaPlayerFramework_Custom.ViewModel.ViewModelLocator
                 userType = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_ViewModelLocator;
-                userType.AddMemberName("Main");
+                userType.AddMemberName("MainVm");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1293,10 +1293,10 @@ namespace MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_ViewModelLocator_Main(object instance)
+        private object get_0_ViewModelLocator_MainVm(object instance)
         {
             var that = (global::MediaPlayerFramework_Custom.ViewModel.ViewModelLocator)instance;
-            return that.Main;
+            return that.MainVm;
         }
         private object get_1_MediaPlayer_Source(object instance)
         {
@@ -2977,10 +2977,10 @@ namespace MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "MediaPlayerFramework_Custom.ViewModel.ViewModelLocator.Main":
+            case "MediaPlayerFramework_Custom.ViewModel.ViewModelLocator.MainVm":
                 userType = (global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MediaPlayerFramework_Custom.ViewModel.ViewModelLocator");
-                xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "Main", "MediaPlayerFramework_Custom.ViewModel.MainViewModel");
-                xamlMember.Getter = get_0_ViewModelLocator_Main;
+                xamlMember = new global::MediaPlayerFramework_Custom.MediaPlayerFramework_Custom_XamlTypeInfo.XamlMember(this, "MainVm", "MediaPlayerFramework_Custom.ViewModel.MainViewModel");
+                xamlMember.Getter = get_0_ViewModelLocator_MainVm;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Source":

@@ -107,14 +107,6 @@ C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlay
 C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\MediaPlayerFramework_Custom.pdb
 C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\en-US\Microsoft.Practices.ServiceLocation.Properties.Resources.resw
 C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\MediaPlayerFramework_Custom.csproj.GenerateResource.Cache
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
-C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate
 C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation.pri
 C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\Microsoft.Practices.ServiceLocation\qualifiers.txt
 C:\Users\damie\Documents\GitHub\Tutorials\MediaPlayerFramework_Example\MediaPlayerFramework_Custom\obj\Debug\priconfig.xml
